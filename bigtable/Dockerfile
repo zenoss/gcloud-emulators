@@ -1,6 +1,6 @@
-FROM google/cloud-sdk:294.0.0-alpine                                            
-RUN apk --update --no-cache add openjdk7-jre
-RUN gcloud components install beta bigtable
+FROM google/cloud-sdk:alpine                                            
+RUN gcloud components install bigtable beta
+
 
 ENV CLOUDSDK_CORE_PROJECT=zing-dev \
     HOST_PORT=0.0.0.0:8086
