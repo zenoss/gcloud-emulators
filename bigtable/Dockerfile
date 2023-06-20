@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:435.0.1-alpine                                         
+FROM google/cloud-sdk:alpine                                         
 RUN gcloud components install bigtable beta
 
 ENV CLOUDSDK_CORE_PROJECT=zing-dev \
