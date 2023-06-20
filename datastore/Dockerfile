@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:294.0.0-alpine                                            
+FROM google/cloud-sdk:alpine                                            
 RUN apk --update --no-cache add openjdk8-jre
 RUN gcloud components install beta cloud-datastore-emulator
 

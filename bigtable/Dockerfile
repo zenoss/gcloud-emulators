@@ -1,6 +1,5 @@
-FROM google/cloud-sdk:alpine                                            
+FROM google/cloud-sdk:alpine                                         
 RUN gcloud components install bigtable beta
-
 
 ENV CLOUDSDK_CORE_PROJECT=zing-dev \
     HOST_PORT=0.0.0.0:8086
